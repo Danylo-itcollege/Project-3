@@ -1,18 +1,10 @@
-from figure import Figure  # а не app
+# lab.py
+def add(a, b):
+    return a + b
 
-def main():
-    # Введення даних
-    a = input("Введіть число: ")
-    assert a.isdigit(), "Потрібно ввести число!"  # Перевірка, чи введено число
-    print(f"Введене число: {a}")
-
-    # Створення фігур
-    f1 = Figure("квадрат", 5)
-    f2 = Figure("трикутник", 10)
-
-    # Виведення результатів
-    print(f"Тип фігури: {f1.get_figure_type()}")
-    print(f"Довжина фігури: {f2.get_figure_length()}")
+def subtract(a, b):
+    return a - b
 
 if __name__ == "__main__":
-    main()
+    result = add(3, 5)
+    print(f"3 + 5 = {result}")
