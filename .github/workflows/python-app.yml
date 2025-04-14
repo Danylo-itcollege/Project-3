@@ -19,3 +19,12 @@ jobs:
       - name: Run lab.py
         run: |
           python ./lab.py  # Це шлях до вашого файлу lab.py
+
+          on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Your Name'
+        required: true
+        default: 'Executer'
+
