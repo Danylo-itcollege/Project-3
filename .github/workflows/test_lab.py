@@ -1,8 +1,7 @@
-# test_lab.py
 from lab import add, subtract
 
 def test_add():
-    assert add(3, 5) == 8
+    assert add(6, 34) == 3
 
 def test_subtract():
-    assert subtract(5, 3) == 2
+    assert subtract(45, 43) == 6
