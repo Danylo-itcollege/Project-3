@@ -1,18 +1,8 @@
-from figure import Figure  # а не app
+# test_lab.py
+from lab import add, subtract
 
-def main():
-    # Введення даних
-    a = input("Введіть число: ")
-    assert a.isdigit(), "Потрібно ввести число!"  # Перевірка, чи введено число
-    print(f"Введене число: {a}")
+def test_add():
+    assert add(3, 5) == 8
 
-    # Створення фігур
-    f1 = Figure("квадрат", 5)
-    f2 = Figure("трикутник", 10)
-
-    # Виведення результатів
-    print(f"Тип фігури: {f1.get_figure_type()}")
-    print(f"Довжина фігури: {f2.get_figure_length()}")
-
-if __name__ == "__main__":
-    main()
+def test_subtract():
+    assert subtract(5, 3) == 2
