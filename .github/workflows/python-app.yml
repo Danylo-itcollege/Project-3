@@ -28,3 +28,6 @@ jobs:
         required: true
         default: 'Executer'
 
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Щодня о 9 ранку
